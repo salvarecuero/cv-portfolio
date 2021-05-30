@@ -1,8 +1,7 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { Row, Button, Loading } from "@geist-ui/react";
 import { useHistory } from "react-router-dom";
 import "./styles/GoToButton.css";
-import { useEffect } from "react/cjs/react.development";
 
 function GoToPortfolioButton({ to, children }) {
   const [loading, setLoading] = useState(false);

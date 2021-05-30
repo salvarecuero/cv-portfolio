@@ -9,7 +9,6 @@ export const useCloseBrowser = (browser, browserID, messageType) => {
 
   useEffect(() => {
     if (browser) {
-      console.log(browser, browserID, messageType);
       const closeBrowser = () => {
         if (browserOpen) {
           const message =
