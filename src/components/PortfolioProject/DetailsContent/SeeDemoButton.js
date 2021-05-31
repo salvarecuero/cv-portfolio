@@ -5,7 +5,7 @@ import "./styles/SeeDemoButton.css";
 function SeeDemoButton({ link }) {
   return (
     <Row className="seeDemoButton">
-      <a href={link}>
+      <a href={link} target="_blank" rel="noreferrer">
         <Button>See demo</Button>
       </a>
     </Row>
