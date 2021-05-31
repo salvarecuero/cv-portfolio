@@ -6,10 +6,10 @@ import "./styles/BasicDesc.css";
 function BasicDesc() {
   const { palette } = useTheme();
 
-  function BasicTag({ content }) {
+  function BasicTag({ content, icon }) {
     return (
       <Tag
-        className="basicTag"
+        className={`basicTag ${!icon ? "autoHeight" : ""}`}
         type="success"
         style={{ color: palette.foreground }}
         invert
@@ -36,6 +36,7 @@ function BasicDesc() {
               <Linkedin color="white" />
             </a>
           }
+          icon
         />
         <BasicTag
           content={
@@ -43,6 +44,7 @@ function BasicDesc() {
               <Mail color="white" />
             </a>
           }
+          icon
         />
       </Text>
     </Row>

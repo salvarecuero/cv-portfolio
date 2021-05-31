@@ -16,6 +16,10 @@
   align-items: center;
 }
 
+.autoHeight {
+  height: auto !important;
+}
+
 .basicTag {
   display: flex;
   justify-content: center;
