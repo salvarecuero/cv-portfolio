@@ -6,7 +6,7 @@ function TechIcon({ tech, size }) {
   const themeColor = useTheme().type;
 
   return (
-    <Tooltip className="tech-icon" text={tech.title} hideArrow>
+    <Tooltip className="tech-icon" text={tech.title} offset="55">
       <a href={tech.webPage} target="_blank" rel="noreferrer">
         <Image
           className={
