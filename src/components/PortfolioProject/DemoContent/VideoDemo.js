@@ -4,7 +4,7 @@ import { useCloseBrowser } from "../../../hooks/useCloseBrowser";
 import "./styles/index.css";
 
 function VideoDemo({ src, nameForID, isMobile }) {
-  const browserOpen = useCloseBrowser(true, nameForID);
+  const browserOpen = useCloseBrowser(true, nameForID, "portfolioDemo");
   const videoBrowser = useRef(null);
 
   function calmAnimation() {

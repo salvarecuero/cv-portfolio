@@ -32,24 +32,24 @@ const ToastMessages = {
 
   portfolioDemo: [
     {
-      text: "",
-      delay: 5000,
+      text: "I tried my best.",
+      delay: 3000,
     },
     {
-      text: "",
-      delay: 5000,
+      text: "CSS is interesting.",
+      delay: 3000,
     },
     {
-      text: "",
-      delay: 5000,
+      text: "What interactions would you add?",
+      delay: 4000,
     },
     {
-      text: "",
-      delay: 5000,
+      text: "Okay... stop closing me :(",
+      delay: 4000,
     },
     {
-      text: "",
-      delay: 5000,
+      text: "So much to learn, love it :)",
+      delay: 4000,
     },
   ],
 };

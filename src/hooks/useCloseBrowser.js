@@ -8,19 +8,21 @@ export const useCloseBrowser = (browser, browserID, messageType) => {
   const [, setClosePictureToast] = useToasts();
 
   useEffect(() => {
+    console.log(browserID, browserOpen);
+  }, [browserOpen, browserID]);
+
+  useEffect(() => {
     if (browser) {
       const closeBrowser = () => {
-        if (browserOpen) {
-          const message =
-            toastMessages[messageType][
-              Math.floor(Math.random() * toastMessages[messageType].length) // Just getting a random value of the array of messages.
-            ];
-          setBrowserOpen(false);
-          setClosePictureToast({
-            text: message.text,
-            delay: message.delay,
-          });
-        }
+        const message =
+          toastMessages[messageType][
+            Math.floor(Math.random() * toastMessages[messageType].length) // Just getting a random value of the array of messages.
+          ];
+        setBrowserOpen(false);
+        setClosePictureToast({
+          text: message.text,
+          delay: message.delay,
+        });
       };
 
       document

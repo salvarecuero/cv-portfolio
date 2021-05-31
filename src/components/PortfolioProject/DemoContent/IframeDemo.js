@@ -4,7 +4,7 @@ import { useCloseBrowser } from "../../../hooks/useCloseBrowser";
 import "./styles/index.css";
 
 function IframeDemo({ src, nameForID }) {
-  const browserOpen = useCloseBrowser(true, nameForID);
+  const browserOpen = useCloseBrowser(true, nameForID, "portfolioDemo");
 
   return (
     <>
