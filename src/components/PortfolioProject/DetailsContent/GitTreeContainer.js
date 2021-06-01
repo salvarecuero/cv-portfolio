@@ -10,9 +10,7 @@ function GithubTree({ repository, nameForID }) {
   const browserOpen = useCloseBrowser(!!treeData, gitTreeID, "portfolioDesc");
 
   useEffect(() => {
-    fetch(
-      `https://cv-portfolio-server.herokuapp.com/api/get-tree/?repoUrl=${repository}`
-    )
+    fetch(`https://cv-portfolio-server.herokuapp.com/api/get-tree/?repoUrl=${repository}`)
       .then((res) => {
         if (!res.ok) {
           throw Error;
@@ -20,10 +18,10 @@ function GithubTree({ repository, nameForID }) {
         return res.json();
       })
       .then((data) => {
-        if (data) {
-          setTreeData(data);
+        if (!data) {
+          throw Error;
         }
-        throw Error;
+        setTreeData(data);
       })
       .catch((error) =>
         console.log(
