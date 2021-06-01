@@ -14,10 +14,10 @@ function GithubTree({ repository, nameForID }) {
       `https://cv-portfolio-server.herokuapp.com/api/get-tree/?repoUrl=${repository}`
     )
       .then((res) => {
-        if (res.ok) {
-          return res.json();
+        if (!res.ok) {
+          throw Error;
         }
-        throw Error;
+        return res.json();
       })
       .then((data) => {
         if (data) {

@@ -8,10 +8,6 @@ export const useCloseBrowser = (browser, browserID, messageType) => {
   const [, setClosePictureToast] = useToasts();
 
   useEffect(() => {
-    console.log(browserID, browserOpen);
-  }, [browserOpen, browserID]);
-
-  useEffect(() => {
     if (browser) {
       const closeBrowser = () => {
         const message =
