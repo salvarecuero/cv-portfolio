@@ -270,7 +270,7 @@ const projects = [
       <Text>
         Made in a Platzi course, in this site you have a cryptocurrencies
         ranking based on price. You can see a graphic of the variation on the
-        price in the last 24hs, and also convert currency to USD and backwards.,
+        price in the last 24hs, and also convert currency to USD and backwards.
       </Text>
     ),
     pills: [
@@ -315,7 +315,7 @@ const projects = [
         <a href="https://jovenesaprogramar.edu.uy/">Jóvenes a Programar</a>{" "}
         course. They provided me some learning content and the directions of how
         the site should work, but I made the logic behind the website and the
-        pages design mostly all by myself, sometimes usig the help of a{" "}
+        pages design mostly all by myself, sometimes using the help of a{" "}
         <a href="https://github.com/Felichz/">friend</a>.
       </Text>
     ),
