@@ -1,6 +1,17 @@
 import React from "react";
 import { Col, Text, Link } from "@geist-ui/react";
 
+// Petgram assets.
+import petgramImg_1 from "../assets/Projects/petgram/petgramImg_1.png";
+import petgramImg_2 from "../assets/Projects/petgram/petgramImg_2.png";
+import petgramImg_3 from "../assets/Projects/petgram/petgramImg_3.png";
+import petgramImg_4 from "../assets/Projects/petgram/petgramImg_4.png";
+import petgramImg_5 from "../assets/Projects/petgram/petgramImg_5.png";
+
+// CV-Portfolio assets.
+import portfolioImg_1 from "../assets/Projects/cv-portfolio/portfolioImg_1.png";
+import portfolioImg_2 from "../assets/Projects/cv-portfolio/portfolioImg_2.png";
+
 // Mercado Libre Frontend Challenge assets.
 import meliVideo_1 from "../assets/Projects/meli-challenge/meliVideo_1.mp4";
 import meliImg_1 from "../assets/Projects/meli-challenge/meliImg_1.png";
@@ -78,6 +89,97 @@ const projectType = {
 };
 
 const projects = [
+  {
+    title: "Petgram",
+    description: (
+      <Text>
+        Web made along a Platzi course. It has a design and functional
+        similarity to Instagram. You can register, log in, like photos, navigate
+        between categories, watch your favourite posts, and, of course sign out.
+      </Text>
+    ),
+    pills: [
+      projectType["course"],
+      {
+        name: "Webpack",
+      },
+      {
+        name: "React",
+      },
+      {
+        name: "GraphQL",
+      },
+      {
+        name: "SEO",
+      },
+      {
+        name: "PWA",
+      },
+      {
+        name: "Cypress",
+      },
+    ],
+    repository: "https://github.com/salvarecuero/Petgram",
+    demoURL: "https://petgram-salvarecuero.vercel.app/",
+    demos: [
+      {
+        type: "img",
+        src: petgramImg_1,
+      },
+      {
+        type: "img",
+        src: petgramImg_2,
+      },
+      {
+        type: "img",
+        src: petgramImg_3,
+      },
+      {
+        type: "img",
+        src: petgramImg_4,
+      },
+      {
+        type: "img",
+        src: petgramImg_5,
+      },
+    ],
+  },
+  {
+    title: "Portfolio",
+    description: (
+      <Text>
+        Well, you are here... Little personal web where I can expose my
+        projects.
+      </Text>
+    ),
+    pills: [
+      projectType["personalProject"],
+      {
+        name: "React",
+      },
+      {
+        name: "Geist",
+      },
+      {
+        name: "Node.js",
+      },
+      {
+        name: "Express",
+      },
+    ],
+    repository: "https://github.com/salvarecuero/cv-portfolio",
+    demoURL: "https://salvador.vercel.app/",
+    demos: [
+      {
+        type: "img",
+        src: portfolioImg_1,
+      },
+      {
+        type: "img",
+        src: portfolioImg_2,
+      },
+    ],
+  },
   {
     title: "Mercado Libre",
     description: (
