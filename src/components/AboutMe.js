@@ -11,8 +11,8 @@ function AboutMe() {
       <Row className="aboutMeRow" justify="center">
         <Col span={16}>
           <Text p>
-            Jr. <i>Web</i> Developer. Enjoying the process step by step. Focused
-            on the frontend and always open to new challenges as required.
+            <i>Web</i> Developer. Enjoying the process step by step. Focused on
+            the frontend and always open to new challenges as required.
             Currently without job experience, wanting to be part of a great
             team. I do have so much to learn, but I'm confident that a lot of
             that knowledge will come along with the experience.
