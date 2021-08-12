@@ -1,5 +1,5 @@
 import React from "react";
-import { Col, Text, Link } from "@geist-ui/react";
+import { Col, Text } from "@geist-ui/react";
 
 // Petgram assets.
 import petgramImg_1 from "../assets/Projects/petgram/petgramImg_1.png";
@@ -30,6 +30,10 @@ import platziImg_1 from "../assets/Projects/platzi-exchange/platziExchangeImg_1.
 // Rangetube assets.
 import rangetubeImg_1 from "../assets/Projects/rangetube/rangetubeImg_1.png";
 import rangetubeImg_2 from "../assets/Projects/rangetube/rangetubeImg_2.png";
+
+// IP Address tracker assets.
+import ipAddressTrackerImg_1 from "../assets/Projects/ip-address-challenge/ip-addressImg_1.png";
+import ipAddressTrackerImg_2 from "../assets/Projects/ip-address-challenge/ip-addressImg_2.png";
 
 // Confusion assets.
 import confusionImg_1 from "../assets/Projects/confusion/confusionImg_1.png";
@@ -284,9 +288,9 @@ const projects = [
         This site allows you to watch-on-repeat an A-B range of a YouTube video.
         It was my first personal project with React, it's based on a website
         called{" "}
-        <Link href="https://looptube.io/" target="_blank">
+        <a href="https://looptube.io/" target="_blank" rel="noreferrer">
           LoopTube
-        </Link>
+        </a>
         .
       </Text>
     ),
@@ -318,15 +322,75 @@ const projects = [
     ],
   },
   {
+    title: "IP Address tracker",
+    description: (
+      <Text>
+        Simple IP geo-tracker, following{" "}
+        <a
+          href="https://www.frontendmentor.io/challenges/ip-address-tracker-I8-0yYAH0"
+          target="_blank"
+          rel="noreferrer"
+        >
+          this Frontend Mentor challenge
+        </a>
+        , that I decided to complete using HTML and good <i>ol'</i> vanilla CSS
+        and JS. Interesting and good looking project. The challenge indicates
+        you to use the{" "}
+        <a href="https://geo.ipify.org/" target="_blank" rel="noreferrer">
+          ipify API
+        </a>
+        , but the free plan gives you a maximum of 1000 queries, which I found
+        limitating. Instead, I decided to use{" "}
+        <a href="https://ipwhois.io/" target="_blank" rel="noreferrer">
+          ipwhois
+        </a>
+        , which gives you a little bit more freedom, and also doesn't requires
+        you to sign up and get an API Key (that would be exposed at least you
+        make a server for this simple challenge).
+      </Text>
+    ),
+    pills: [
+      projectType["challenge"],
+      {
+        name: "HTML",
+      },
+      {
+        name: "CSS",
+      },
+      {
+        name: "Javascript",
+      },
+    ],
+    repository: "https://github.com/salvarecuero/ip-address-tracker-challenge",
+    demoURL: "https://salvarecuero.github.io/ip-address-tracker-challenge/",
+    demos: [
+      {
+        type: "img",
+        src: ipAddressTrackerImg_1,
+      },
+      {
+        type: "img",
+        src: ipAddressTrackerImg_2,
+      },
+    ],
+  },
+  {
     title: "Confusion",
     description: (
       <Text>
         My first React project. Made in a course of{" "}
-        <a href="https://hkust.edu.hk/">
+        <a href="https://hkust.edu.hk/" target="_blank" rel="noreferrer">
           The Hong Kong University of Science and Technology
         </a>
-        , which was done in <a href="https://www.coursera.org/">Coursera</a>{" "}
-        with the facilitation of <a href="http://www.inefop.org.uy/">INEFOP</a>.
+        , which was done in{" "}
+        <a href="https://www.coursera.org/" target="_blank" rel="noreferrer">
+          Coursera
+        </a>{" "}
+        with the facilitation of{" "}
+        <a href="http://www.inefop.org.uy/" target="_blank" rel="noreferrer">
+          INEFOP
+        </a>
+        .
       </Text>
     ),
     pills: [
@@ -408,17 +472,30 @@ const projects = [
         In this webpage you can simulate the navigation through an eCommerce. It
         doesn't interact with a server, everything is fetched from .json files
         and user data stored in{" "}
-        <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage">
+        <a
+          href="https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage"
+          target="_blank"
+          rel="noreferrer"
+        >
           localStorage
         </a>
         . It was my second project, and I used it to apply the basic usage of
         JavaScript. If it well says that this is a personal project, I made this
         eCommerce in a{" "}
-        <a href="https://jovenesaprogramar.edu.uy/">Jóvenes a Programar</a>{" "}
+        <a
+          href="https://jovenesaprogramar.edu.uy/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Jóvenes a Programar
+        </a>{" "}
         course. They provided me some learning content and the directions of how
         the site should work, but I made the logic behind the website and the
         pages design mostly all by myself, sometimes using the help of a{" "}
-        <a href="https://github.com/Felichz/">friend</a>.
+        <a href="https://github.com/Felichz/" target="_blank" rel="noreferrer">
+          friend
+        </a>
+        .
       </Text>
     ),
     pills: [
@@ -480,10 +557,16 @@ const projects = [
       <Text>
         My first "official" HTML (and also Bootstrap) project. At the time I was
         learning HTML and decided to make a{" "}
-        <a href="https://www.taringa.net/">Taringa!</a> clone. It has almost no
-        interaction because at the moment I didn't know JavaScript. It's based
-        on the V5 of Taringa!, specifically,{" "}
-        <a href="http://web.archive.org/web/20120223062759/http://www.taringa.net/">
+        <a href="https://www.taringa.net/" target="_blank" rel="noreferrer">
+          Taringa!
+        </a>{" "}
+        clone. It has almost no interaction because at the moment I didn't know
+        JavaScript. It's based on the V5 of Taringa!, specifically,{" "}
+        <a
+          href="http://web.archive.org/web/20120223062759/http://www.taringa.net/"
+          target="_blank"
+          rel="noreferrer"
+        >
           on this Wayback Machine snapshot
         </a>
         .
