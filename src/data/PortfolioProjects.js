@@ -2,61 +2,120 @@ import React from "react";
 import { Col, Text } from "@geist-ui/react";
 
 // Petgram assets.
-import petgramImg_1 from "../assets/Projects/petgram/petgramImg_1.png";
-import petgramImg_2 from "../assets/Projects/petgram/petgramImg_2.png";
-import petgramImg_3 from "../assets/Projects/petgram/petgramImg_3.png";
-import petgramImg_4 from "../assets/Projects/petgram/petgramImg_4.png";
-import petgramImg_5 from "../assets/Projects/petgram/petgramImg_5.png";
+import {
+  petgramImg_1,
+  petgramImg_1_fallback,
+  petgramImg_2,
+  petgramImg_2_fallback,
+  petgramImg_3,
+  petgramImg_3_fallback,
+  petgramImg_4,
+  petgramImg_4_fallback,
+  petgramImg_5,
+  petgramImg_5_fallback,
+} from "../assets/Projects/petgram/";
 
 // CV-Portfolio assets.
-import portfolioImg_1 from "../assets/Projects/cv-portfolio/portfolioImg_1.png";
-import portfolioImg_2 from "../assets/Projects/cv-portfolio/portfolioImg_2.png";
+import {
+  portfolioImg_1,
+  portfolioImg_1_fallback,
+  portfolioImg_2,
+  portfolioImg_2_fallback,
+} from "../assets/Projects/cv-portfolio/";
 
 // Mercado Libre Frontend Challenge assets.
-import meliVideo_1 from "../assets/Projects/meli-challenge/meliVideo_1.mp4";
-import meliImg_1 from "../assets/Projects/meli-challenge/meliImg_1.png";
+import {
+  meliImg_1,
+  meliImg_1_fallback,
+  meliImg_2,
+  meliImg_2_fallback,
+  meliVideo_1,
+} from "../assets/Projects/meli-challenge/";
 
 // LolChampionGallery assets.
-import LolChampionGalleryVideo_1 from "../assets/Projects/LolChampionGallery/LolChampionGalleryVideo_1.webm";
-import LolChampionGalleryImg_1 from "../assets/Projects/LolChampionGallery/LolChampionGalleryImg_1.png";
-import LolChampionGalleryImg_2 from "../assets/Projects/LolChampionGallery/LolChampionGalleryImg_2.png";
-import LolChampionGalleryImg_3 from "../assets/Projects/LolChampionGallery/LolChampionGalleryImg_3.png";
-import LolChampionGalleryImg_4 from "../assets/Projects/LolChampionGallery/LolChampionGalleryImg_4.png";
-import LolChampionGalleryImg_5 from "../assets/Projects/LolChampionGallery/LolChampionGalleryImg_5.png";
+import {
+  LolChampionGalleryImg_1,
+  LolChampionGalleryImg_1_fallback,
+  LolChampionGalleryImg_2,
+  LolChampionGalleryImg_2_fallback,
+  LolChampionGalleryImg_3,
+  LolChampionGalleryImg_3_fallback,
+  LolChampionGalleryImg_4,
+  LolChampionGalleryImg_4_fallback,
+  LolChampionGalleryImg_5,
+  LolChampionGalleryImg_5_fallback,
+  LolChampionGalleryVideo_1,
+} from "../assets/Projects/LolChampionGallery/";
 
 // Platzi-Exchange assets.
-import platziImg_1 from "../assets/Projects/platzi-exchange/platziExchangeImg_1.png";
+import {
+  platziExchangeImg_1,
+  platziExchangeImg_1_fallback,
+  platziExchangeImg_2,
+  platziExchangeImg_2_fallback,
+} from "../assets/Projects/platzi-exchange/";
 
 // Rangetube assets.
-import rangetubeImg_1 from "../assets/Projects/rangetube/rangetubeImg_1.png";
-import rangetubeImg_2 from "../assets/Projects/rangetube/rangetubeImg_2.png";
+import {
+  rangetubeImg_1,
+  rangetubeImg_1_fallback,
+  rangetubeImg_2,
+  rangetubeImg_2_fallback,
+} from "../assets/Projects/rangetube/";
 
 // IP Address tracker assets.
-import ipAddressTrackerImg_1 from "../assets/Projects/ip-address-challenge/ip-addressImg_1.png";
-import ipAddressTrackerImg_2 from "../assets/Projects/ip-address-challenge/ip-addressImg_2.png";
+import {
+  ipAddressImg_1,
+  ipAddressImg_1_fallback,
+  ipAddressImg_2,
+  ipAddressImg_2_fallback,
+} from "../assets/Projects/ip-address-challenge/";
 
 // Confusion assets.
-import confusionImg_1 from "../assets/Projects/confusion/confusionImg_1.png";
-import confusionImg_2 from "../assets/Projects/confusion/confusionImg_2.png";
-import confusionImg_3 from "../assets/Projects/confusion/confusionImg_3.png";
-import confusionImg_4 from "../assets/Projects/confusion/confusionImg_4.png";
-import confusionImg_5 from "../assets/Projects/confusion/confusionImg_5.png";
+import {
+  confusionImg_1,
+  confusionImg_1_fallback,
+  confusionImg_2,
+  confusionImg_2_fallback,
+  confusionImg_3,
+  confusionImg_3_fallback,
+  confusionImg_4,
+  confusionImg_4_fallback,
+  confusionImg_5,
+  confusionImg_5_fallback,
+} from "../assets/Projects/confusion/";
 
 // Extinga assets.
-import extingaImg_1 from "../assets/Projects/extinga/extingaImg_1.png";
-import extingaImg_2 from "../assets/Projects/extinga/extingaImg_2.png";
-import extingaImg_3 from "../assets/Projects/extinga/extingaImg_3.png";
+import {
+  extingaImg_1,
+  extingaImg_1_fallback,
+  extingaImg_2,
+  extingaImg_2_fallback,
+  extingaImg_3,
+  extingaImg_3_fallback,
+} from "../assets/Projects/extinga/";
 
-// Extinga assets.
-import japEcommerceImg_1 from "../assets/Projects/jap-ecommerce/jap-ecommerceImg_1.png";
-import japEcommerceImg_2 from "../assets/Projects/jap-ecommerce/jap-ecommerceImg_2.png";
-import japEcommerceImg_3 from "../assets/Projects/jap-ecommerce/jap-ecommerceImg_3.png";
-import japEcommerceImg_4 from "../assets/Projects/jap-ecommerce/jap-ecommerceImg_4.png";
-import japEcommerceImg_5 from "../assets/Projects/jap-ecommerce/jap-ecommerceImg_5.png";
-import japEcommerceImg_6 from "../assets/Projects/jap-ecommerce/jap-ecommerceImg_6.png";
-import japEcommerceImg_7 from "../assets/Projects/jap-ecommerce/jap-ecommerceImg_7.png";
-import japEcommerceImg_8 from "../assets/Projects/jap-ecommerce/jap-ecommerceImg_8.png";
-import japEcommerceImg_9 from "../assets/Projects/jap-ecommerce/jap-ecommerceImg_9.png";
+// JaP-Ecommerce assets.
+import {
+  japEcommerceImg_1,
+  japEcommerceImg_1_fallback,
+  japEcommerceImg_2,
+  japEcommerceImg_2_fallback,
+  japEcommerceImg_3,
+  japEcommerceImg_3_fallback,
+  japEcommerceImg_4,
+  japEcommerceImg_4_fallback,
+  japEcommerceImg_5,
+  japEcommerceImg_5_fallback,
+  japEcommerceImg_6,
+  japEcommerceImg_6_fallback,
+  japEcommerceImg_7,
+  japEcommerceImg_7_fallback,
+  japEcommerceImg_8,
+  japEcommerceImg_8_fallback,
+  japEcommerceImg_9,
+  japEcommerceImg_9_fallback,
+} from "../assets/Projects/jap-ecommerce/";
 
 /* Project prototype
 
@@ -128,23 +187,23 @@ const projects = [
     demos: [
       {
         type: "img",
-        src: petgramImg_1,
+        src: [petgramImg_1, petgramImg_1_fallback],
       },
       {
         type: "img",
-        src: petgramImg_2,
+        src: [petgramImg_2, petgramImg_2_fallback],
       },
       {
         type: "img",
-        src: petgramImg_3,
+        src: [petgramImg_3, petgramImg_3_fallback],
       },
       {
         type: "img",
-        src: petgramImg_4,
+        src: [petgramImg_4, petgramImg_4_fallback],
       },
       {
         type: "img",
-        src: petgramImg_5,
+        src: [petgramImg_5, petgramImg_5_fallback],
       },
     ],
   },
@@ -176,11 +235,11 @@ const projects = [
     demos: [
       {
         type: "img",
-        src: portfolioImg_1,
+        src: [portfolioImg_1, portfolioImg_1_fallback],
       },
       {
         type: "img",
-        src: portfolioImg_2,
+        src: [portfolioImg_2, portfolioImg_2_fallback],
       },
     ],
   },
@@ -218,7 +277,11 @@ const projects = [
     demos: [
       {
         type: "img",
-        src: meliImg_1,
+        src: [meliImg_1, meliImg_1_fallback],
+      },
+      {
+        type: "img",
+        src: [meliImg_2, meliImg_2_fallback],
       },
       {
         type: "video",
@@ -256,27 +319,27 @@ const projects = [
       },
       {
         type: "img",
-        src: LolChampionGalleryImg_1,
+        src: [LolChampionGalleryImg_1, LolChampionGalleryImg_1_fallback],
         isMobile: true,
       },
       {
         type: "img",
-        src: LolChampionGalleryImg_2,
+        src: [LolChampionGalleryImg_2, LolChampionGalleryImg_2_fallback],
         isMobile: true,
       },
       {
         type: "img",
-        src: LolChampionGalleryImg_3,
+        src: [LolChampionGalleryImg_3, LolChampionGalleryImg_3_fallback],
         isMobile: true,
       },
       {
         type: "img",
-        src: LolChampionGalleryImg_4,
+        src: [LolChampionGalleryImg_4, LolChampionGalleryImg_4_fallback],
         isMobile: true,
       },
       {
         type: "img",
-        src: LolChampionGalleryImg_5,
+        src: [LolChampionGalleryImg_5, LolChampionGalleryImg_5_fallback],
         isMobile: true,
       },
     ],
@@ -308,16 +371,12 @@ const projects = [
 
     demos: [
       {
-        type: "iframe",
-        src: "https://rangetube.netlify.app/",
+        type: "img",
+        src: [rangetubeImg_1, rangetubeImg_1_fallback],
       },
       {
         type: "img",
-        src: rangetubeImg_1,
-      },
-      {
-        type: "img",
-        src: rangetubeImg_2,
+        src: [rangetubeImg_2, rangetubeImg_2_fallback],
       },
     ],
   },
@@ -366,11 +425,11 @@ const projects = [
     demos: [
       {
         type: "img",
-        src: ipAddressTrackerImg_1,
+        src: [ipAddressImg_1, ipAddressImg_1_fallback],
       },
       {
         type: "img",
-        src: ipAddressTrackerImg_2,
+        src: [ipAddressImg_2, ipAddressImg_2_fallback],
       },
     ],
   },
@@ -410,23 +469,23 @@ const projects = [
     demos: [
       {
         type: "img",
-        src: confusionImg_1,
+        src: [confusionImg_1, confusionImg_1_fallback],
       },
       {
         type: "img",
-        src: confusionImg_2,
+        src: [confusionImg_2, confusionImg_2_fallback],
       },
       {
         type: "img",
-        src: confusionImg_3,
+        src: [confusionImg_3, confusionImg_3_fallback],
       },
       {
         type: "img",
-        src: confusionImg_4,
+        src: [confusionImg_4, confusionImg_4_fallback],
       },
       {
         type: "img",
-        src: confusionImg_5,
+        src: [confusionImg_5, confusionImg_5_fallback],
       },
     ],
   },
@@ -456,12 +515,12 @@ const projects = [
 
     demos: [
       {
-        type: "iframe",
-        src: "https://salvarecuero-platzi-exchange.netlify.app/",
+        type: "img",
+        src: [platziExchangeImg_1, platziExchangeImg_1_fallback],
       },
       {
         type: "img",
-        src: platziImg_1,
+        src: [platziExchangeImg_2, platziExchangeImg_2_fallback],
       },
     ],
   },
@@ -515,39 +574,39 @@ const projects = [
     demos: [
       {
         type: "img",
-        src: japEcommerceImg_1,
+        src: [japEcommerceImg_1, japEcommerceImg_1_fallback],
       },
       {
         type: "img",
-        src: japEcommerceImg_2,
+        src: [japEcommerceImg_2, japEcommerceImg_2_fallback],
       },
       {
         type: "img",
-        src: japEcommerceImg_3,
+        src: [japEcommerceImg_3, japEcommerceImg_3_fallback],
       },
       {
         type: "img",
-        src: japEcommerceImg_4,
+        src: [japEcommerceImg_4, japEcommerceImg_4_fallback],
       },
       {
         type: "img",
-        src: japEcommerceImg_5,
+        src: [japEcommerceImg_5, japEcommerceImg_5_fallback],
       },
       {
         type: "img",
-        src: japEcommerceImg_6,
+        src: [japEcommerceImg_6, japEcommerceImg_6_fallback],
       },
       {
         type: "img",
-        src: japEcommerceImg_7,
+        src: [japEcommerceImg_7, japEcommerceImg_7_fallback],
       },
       {
         type: "img",
-        src: japEcommerceImg_8,
+        src: [japEcommerceImg_8, japEcommerceImg_8_fallback],
       },
       {
         type: "img",
-        src: japEcommerceImg_9,
+        src: [japEcommerceImg_9, japEcommerceImg_9_fallback],
       },
     ],
   },
@@ -587,15 +646,15 @@ const projects = [
     demos: [
       {
         type: "img",
-        src: extingaImg_1,
+        src: [extingaImg_1, extingaImg_1_fallback],
       },
       {
         type: "img",
-        src: extingaImg_2,
+        src: [extingaImg_2, extingaImg_2_fallback],
       },
       {
         type: "img",
-        src: extingaImg_3,
+        src: [extingaImg_3, extingaImg_3_fallback],
       },
     ],
   },

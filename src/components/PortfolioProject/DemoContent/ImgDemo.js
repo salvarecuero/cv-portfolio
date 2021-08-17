@@ -3,7 +3,7 @@ import { Image } from "@geist-ui/react";
 import { useCloseBrowser } from "../../../hooks/useCloseBrowser";
 import "./styles/index.css";
 
-function ImgDemo({ src, nameForID, isMobile }) {
+function ImgDemo({ img, nameForID, isMobile }) {
   const browserOpen = useCloseBrowser(true, nameForID, "portfolioDemo");
   const imageBrowser = useRef(null);
 
@@ -21,10 +21,14 @@ function ImgDemo({ src, nameForID, isMobile }) {
       ref={imageBrowser}
     >
       <img
-        src={src}
+        src={img[0]}
         className="demoContent"
         alt="View of my project."
         loading="lazy"
+        onError={(e) => {
+          e.target.onerror = null;
+          e.target.src = img[1];
+        }}
         onClick={getImageInRightOrder}
       />
     </Image.Browser>

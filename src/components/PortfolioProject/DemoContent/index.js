@@ -57,7 +57,7 @@ function DemoContent({ demos, nameForID }) {
             <ImgDemo
               key={index}
               nameForID={demoID}
-              src={demo.src}
+              img={demo.src}
               isMobile={demo.isMobile}
             />
           ),
