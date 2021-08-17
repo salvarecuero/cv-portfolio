@@ -9,12 +9,13 @@ function TechIcon({ tech, size }) {
     <Tooltip className="tech-icon" text={tech.title} offset="55">
       <a href={tech.webPage} target="_blank" rel="noreferrer">
         <Image
+          src={tech.icon}
           className={
             tech.shouldInvertColorsIfNeeded && themeColor === "dark"
               ? "invertColor"
               : null
           }
-          src={tech.icon}
+          alt={tech.title}
           width={size}
         />
       </a>
