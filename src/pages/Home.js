@@ -11,6 +11,8 @@ import "./styles/Home.css";
 function Home() {
   useEffect(() => {
     document.title = "Salvador Recuero";
+    // We ping the server so Heroku wakes up it's Dyno.
+    fetch("https://cv-portfolio-server.herokuapp.com/");
   }, []);
 
   return (
