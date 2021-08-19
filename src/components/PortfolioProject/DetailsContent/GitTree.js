@@ -3,7 +3,7 @@ import { Tree } from "@geist-ui/react";
 
 function GitTree({ treeData }) {
   function makeTree(item, index) {
-    if (item["type"] === "file") {
+    if (item["type"] === "blob") {
       return (
         <Tree.File
           key={index}
@@ -12,7 +12,7 @@ function GitTree({ treeData }) {
           onClick={() => window.open(item.html_url)}
         />
       );
-    } else if (item["type"] === "dir") {
+    } else if (item["type"] === "tree") {
       return (
         <Tree.Folder key={index} name={item.name}>
           {item.children?.map((childrenItem, index) =>
