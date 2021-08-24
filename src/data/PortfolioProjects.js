@@ -153,6 +153,52 @@ const projectType = {
 
 const projects = [
   {
+    title: "Mercado Libre",
+    description: (
+      <Col>
+        <Text>
+          Mercado Libre Frontend Challenge, gives you the possibility to search
+          and view-in-detail products.
+        </Text>
+        <Text p small>
+          In the video I had a little problem while capturing my VSCode's, so
+          -sometimes- they don't correspond to what the title says.
+        </Text>
+      </Col>
+    ),
+    pills: [
+      projectType["challenge"],
+      {
+        name: "React",
+      },
+      {
+        name: "Sass",
+      },
+      {
+        name: "Node.js",
+      },
+      {
+        name: "Express",
+      },
+    ],
+    repository: "https://github.com/salvarecuero/meli-frontend-challenge",
+    demoURL: "https://meli-frontend-challenge-client-salvarecuero.vercel.app/",
+    demos: [
+      {
+        type: "video",
+        src: meliVideo_1,
+      },
+      {
+        type: "img",
+        src: [meliImg_1, meliImg_1_fallback],
+      },
+      {
+        type: "img",
+        src: [meliImg_2, meliImg_2_fallback],
+      },
+    ],
+  },
+  {
     title: "Petgram",
     description: (
       <Text>
@@ -240,52 +286,6 @@ const projects = [
       {
         type: "img",
         src: [portfolioImg_2, portfolioImg_2_fallback],
-      },
-    ],
-  },
-  {
-    title: "Mercado Libre",
-    description: (
-      <Col>
-        <Text>
-          Mercado Libre Frontend Challenge, gives you the possibility to search
-          and view-in-detail products.
-        </Text>
-        <Text p small>
-          In the video I had a little problem while capturing my VSCode's, so
-          -sometimes- they don't correspond to what the title says.
-        </Text>
-      </Col>
-    ),
-    pills: [
-      projectType["challenge"],
-      {
-        name: "React",
-      },
-      {
-        name: "Sass",
-      },
-      {
-        name: "Node.js",
-      },
-      {
-        name: "Express",
-      },
-    ],
-    repository: "https://github.com/salvarecuero/meli-frontend-challenge",
-    demoURL: "https://meli-frontend-challenge-client-salvarecuero.vercel.app/",
-    demos: [
-      {
-        type: "img",
-        src: [meliImg_1, meliImg_1_fallback],
-      },
-      {
-        type: "img",
-        src: [meliImg_2, meliImg_2_fallback],
-      },
-      {
-        type: "video",
-        src: meliVideo_1,
       },
     ],
   },

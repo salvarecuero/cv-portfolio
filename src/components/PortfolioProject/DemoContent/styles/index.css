@@ -43,6 +43,7 @@
 
 .arrowButton {
   display: flex !important;
+  align-items: center !important;
   padding: 0 !important;
   width: 2.5rem !important;
   min-width: auto !important;
