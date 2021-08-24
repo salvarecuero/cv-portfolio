@@ -8,10 +8,13 @@ const ToastMessages = {
 
   portfolioProject: [
     {
-      text: "Hope you are getting fun while trying to delete my projects...",
+      text: "Hope you are getting fun while trying to delete my projects... But I'll keep it, sorry.",
       delay: 5000,
     },
-    { text: "It took me time to make it :(", delay: 4000 },
+    {
+      text: "It took me time to make it :( ... So I'll keep it, sorry.",
+      delay: 4000,
+    },
   ],
 
   portfolioDesc: [
