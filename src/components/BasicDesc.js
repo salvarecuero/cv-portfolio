@@ -1,5 +1,5 @@
 import React from "react";
-import { Row, Text, Tag, useTheme } from "@geist-ui/react";
+import { Row, Text, Tag, useTheme, Link } from "@geist-ui/react";
 import { Linkedin, Mail } from "@geist-ui/react-icons";
 import "./styles/BasicDesc.css";
 
@@ -24,7 +24,17 @@ function BasicDesc() {
       <Text size={14} i>
         <BasicTag content="21 years old" />
         <BasicTag content="Web developer" />
-        <BasicTag content="Looking for a job" />
+        <BasicTag
+          content={
+            <span>
+              Working at{" "}
+              <Link href="https://www.vairix.com/" underline>
+                Vairix
+              </Link>
+              !
+            </span>
+          }
+        />
         <BasicTag content="Learning" />
         <BasicTag
           content={
