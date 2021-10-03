@@ -15,6 +15,18 @@ import {
   petgramImg_5_fallback,
 } from "../assets/Projects/petgram/";
 
+// URL Shortening Challenge assets.
+import {
+  urlShorteningImg_1,
+  urlShorteningImg_1_fallback,
+  urlShorteningImg_2,
+  urlShorteningImg_2_fallback,
+  urlShorteningImg_3,
+  urlShorteningImg_3_fallback,
+  urlShorteningImg_4,
+  urlShorteningImg_4_fallback,
+} from "../assets/Projects/url-shortening-challenge";
+
 // CV-Portfolio assets.
 import {
   portfolioImg_1,
@@ -250,6 +262,55 @@ const projects = [
       {
         type: "img",
         src: [petgramImg_5, petgramImg_5_fallback],
+      },
+    ],
+  },
+  {
+    title: "Shortly",
+    description: (
+      <Text>
+        Interesting FrontEnd project, where you can create shorten links of a
+        given URL. It's based on{" "}
+        <a
+          href="https://www.frontendmentor.io/challenges/url-shortening-api-landing-page-2ce3ob-G"
+          target="_blank"
+          rel="noreferrer"
+        >
+          this Frontend Mentor challenge
+        </a>
+        . Was a really fun experience where I put my CSS knowledge at test.
+      </Text>
+    ),
+    pills: [
+      projectType["challenge"],
+      {
+        name: "React",
+      },
+      {
+        name: "Sass",
+      },
+      {
+        name: "PWA",
+      },
+    ],
+    repository: "https://github.com/salvarecuero/url-shortening-challenge",
+    demoURL: "https://url-shortening-challenge.vercel.app/",
+    demos: [
+      {
+        type: "img",
+        src: [urlShorteningImg_1, urlShorteningImg_1_fallback],
+      },
+      {
+        type: "img",
+        src: [urlShorteningImg_2, urlShorteningImg_2_fallback],
+      },
+      {
+        type: "img",
+        src: [urlShorteningImg_3, urlShorteningImg_3_fallback],
+      },
+      {
+        type: "img",
+        src: [urlShorteningImg_4, urlShorteningImg_4_fallback],
       },
     ],
   },
