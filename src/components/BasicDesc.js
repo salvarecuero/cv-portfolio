@@ -1,6 +1,7 @@
 import React from "react";
 import { Row, Text, Tag, useTheme, Link } from "@geist-ui/react";
 import { Linkedin, Mail } from "@geist-ui/react-icons";
+import { calculateAge } from "../utils";
 import "./styles/BasicDesc.css";
 
 function BasicDesc() {
@@ -22,13 +23,18 @@ function BasicDesc() {
   return (
     <Row className="basicDesc" justify="center">
       <Text size={14} i>
-        <BasicTag content="21 years old" />
+        <BasicTag content={`${calculateAge("1999-10-05")} years old`} />
         <BasicTag content="Web developer" />
         <BasicTag
           content={
             <span>
               Working at{" "}
-              <Link href="https://www.vairix.com/" underline>
+              <Link
+                href="https://www.vairix.com"
+                target="_blank"
+                rel="noreferrer noopener"
+                underline
+              >
                 Vairix
               </Link>
               !
