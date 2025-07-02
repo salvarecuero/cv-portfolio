@@ -10,7 +10,9 @@ function GithubTree({ repository, nameForID }) {
   const browserOpen = useCloseBrowser(!!treeData, gitTreeID, "portfolioDesc");
 
   useEffect(() => {
-    fetch(`https://cv-portfolio-server.herokuapp.com/api/get-tree/?repoUrl=${repository}`)
+    fetch(
+      `${process.env.REACT_APP_API_HOST}/api/get-tree/?repoUrl=${repository}`
+    )
       .then((res) => {
         if (!res.ok) {
           throw Error;
